@@ -1,0 +1,86 @@
+body {
+ background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ color: white
+
+}
+main {
+  width: 830px;
+
+  display: flex;
+  
+  margin: 30px auto;
+
+}
+
+.seccion1 {
+  background-color: rgb(255, 255, 255,0.2 );
+  border: 2px rgb(212, 192, 231) solid;
+  padding: 0 15px 15px 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+
+.section2 {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 0 15px 15px 15px;
+  width: 350px;
+  height: 680px;
+  border: 2px rgb(212, 192, 231) solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  padding: 15px;
+  border: 2px rgb(212, 192, 231) solid;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 30px 30px 30px 0px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  padding: 15px;
+}
+button {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 
+  0%, rgba(4, 0, 4, 1) 90%); 
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  cursor: pointer;
+}
+button:disabled, button[disabled]{
+  background-color: rgb(255, 255, 255, 1);
+  color: rgb(255, 255, 255, 1);
+  
+}
+
+ 
+
+footer{
+  
+  text-align: center;
+}
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div > button {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+
+}
+
