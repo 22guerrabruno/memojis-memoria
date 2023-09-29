@@ -60,6 +60,17 @@ function blockTurnAllCards() {
 }
 
 function start() {
+  movements = 0;
+  points = 0;
+  time = 60;
+  score = 0;
+  totalMovements.innerHTML = `Total Movimientos: ${movements}`;
+  totalPoints.innerHTML = `Total Puntos: ${points}`;
+  totalScore.innerHTML = `Total Aciertos: ${score}`;
+  if (regresiveTime) {
+    clearInterval(regresiveTime);
+  }
+  tempoBack.innerHTML = `Temporizador ⌛️: ${time}`;
   emojis = emojis.sort(() => Math.random() - 0.5);
   for (let i = 0; i < emojis.length; i++) {
     let card = document.getElementById(i);
