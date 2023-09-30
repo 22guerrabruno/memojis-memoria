@@ -128,7 +128,7 @@ function turn(id) {
       }, 800);
     }
     if (score === 10) {
-      //confeti();
+      clearInterval(regresiveTime);
       totalScore.innerHTML = `Total Aciertos: ${score}`;
       totalPoints.innerHTML = `Total Puntos: ${points}`;
       tempoBack.innerHTML = "Enhorabuena lo has logrado";
