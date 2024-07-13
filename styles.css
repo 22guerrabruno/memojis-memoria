@@ -131,9 +131,9 @@ div > button {
   }
 
   button {
-    height: 50px;
-    width: 50px;
-    font-size: 50px;
+    height: auto;
+    width: auto;
+    font-size: auto;
   }
 
   div > button {
