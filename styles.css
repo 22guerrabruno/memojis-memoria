@@ -1,25 +1,26 @@
 body {
- background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- color: white
-
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(100, 43, 115, 1) 0%,
+    rgba(4, 0, 4, 1) 90%
+  );
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
 }
 main {
   width: 830px;
 
   display: flex;
-  
-  margin: 30px auto;
 
+  margin: 30px auto;
 }
 
 .seccion1 {
-  background-color: rgb(255, 255, 255,0.2 );
+  background-color: rgb(255, 255, 255, 0.2);
   border: 2px rgb(212, 192, 231) solid;
   padding: 0 15px 15px 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-
 }
 
 .section2 {
@@ -30,7 +31,6 @@ main {
   border: 2px rgb(212, 192, 231) solid;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-
 }
 h2 {
   text-align: center;
@@ -43,33 +43,33 @@ h2 {
   margin: 30px 30px 30px 0px;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 40px;
   margin: 10px;
   padding: 15px;
 }
 button {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 
-  0%, rgba(4, 0, 4, 1) 90%); 
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(100, 43, 115, 1) 0%,
+    rgba(4, 0, 4, 1) 90%
+  );
   height: 100px;
   width: 100px;
   font-size: 60px;
   cursor: pointer;
 }
-button:disabled, button[disabled]{
+button:disabled,
+button[disabled] {
   background-color: rgb(255, 255, 255, 1);
   color: rgb(255, 255, 255, 1);
-  
 }
 
- 
-
-footer{
-  
+footer {
   text-align: center;
 }
-div{
+div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -81,6 +81,68 @@ div > button {
   font-size: 30px;
   color: white;
   margin-bottom: 15px;
-
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .seccion1,
+  .section2 {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(212, 192, 231);
+    border-radius: 15px;
+  }
+  .seccion1 table {
+    width: 100%;
+    height: 100%;
+  }
+  .seccion1 table td {
+    width: 25%; /* Divide equally among 4 columns */
+    padding: 0; /* Remove padding for full width */
+  }
+  .seccion1 table button {
+    width: 100%;
+    height: 100%;
+    padding: 2px; /* Adjust padding to control button size */
+    aspect-ratio: 1 / 1;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 12px;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  button {
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+  }
+
+  div > button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+  .start {
+    font-size: 16px;
+    border-radius: 15px;
+  }
+}
