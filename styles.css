@@ -112,8 +112,8 @@ div > button {
     padding: 0; /* Remove padding for full width */
   }
   .seccion1 table button {
-    width: 50px; /* Tamaño fijo para mantener el botón cuadrado */
-    height: 50px; /* Tamaño fijo para mantener el botón cuadrado */
+    width: 100px; /* Tamaño fijo para mantener el botón cuadrado */
+    height: 100px; /* Tamaño fijo para mantener el botón cuadrado */
     padding: 0; /* Elimina el padding para evitar desajustes en el tamaño */
     display: flex; /* Habilita flexbox para centrar el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
