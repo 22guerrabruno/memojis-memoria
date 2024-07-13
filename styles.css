@@ -112,8 +112,8 @@ div > button {
     padding: 0; /* Remove padding for full width */
   }
   .seccion1 table button {
-    width: 100px; /* Tamaño fijo para mantener el botón cuadrado */
-    height: 100px; /* Tamaño fijo para mantener el botón cuadrado */
+    width: 90px; /* Tamaño fijo para mantener el botón cuadrado */
+    height: 90px; /* Tamaño fijo para mantener el botón cuadrado */
     padding: 0; /* Elimina el padding para evitar desajustes en el tamaño */
     display: flex; /* Habilita flexbox para centrar el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -131,12 +131,6 @@ div > button {
     font-size: 12px;
     margin: 5px;
     padding: 10px;
-  }
-
-  button {
-    height: auto;
-    width: auto;
-    font-size: auto;
   }
 
   div > button {
